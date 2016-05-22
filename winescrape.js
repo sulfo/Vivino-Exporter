@@ -1,5 +1,21 @@
 (function(){
 
+console.log('title,year,type,rating');
+$('.activity-card').each(function(i,ele){
+    var title = $(ele).find('.wine-name a.bold').html();
+    var vintage = $(ele).find('.wine-name').clone().children().remove().end().text();
+    
+    
+    
+    console.log(title.replace(/\d+/, '').trim() + ',' + vintage.trim());
+});
+})();
+
+
+/*
+
+(function(){
+
 var removeVarietal = function(title){
     var wine_types = ['port', 'shiraz','merlot', 'sauvignon blanc', 'rosé', 'rose', 'cabernet sauvignon', 'red', 'zinfandel', 'syrah', 'malbec', 'riesling', 'pinot noir', 'cabernet franc', 'bordeaux', 'chardonnay'];
     var wine_prefix = ['late harvest', 'old vine'];
@@ -14,8 +30,8 @@ var removeVarietal = function(title){
 }
 
 console.log('title,year,type,rating');
-$('.wine_list_item').each(function(i,ele){
-    var title = $(ele).find('.description a').html();
+$('.activity-card').each(function(i,ele){
+    var title = $(ele).find('.wine-info p a').html();
     var rating = $(ele).find('.mw_buttons input').val();
     
     if (title && rating && rating > 0){
@@ -28,3 +44,4 @@ $('.wine_list_item').each(function(i,ele){
     }
 });
 })();
+*/
