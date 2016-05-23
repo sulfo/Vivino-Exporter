@@ -1,6 +1,6 @@
 (function(){
 
-console.log('title | year | origin_region | origin_contry | rating');
+console.log('title | year | origin_region | origin_contry | rating | price');
 
 $('.activity-card').each(function(i,ele){
     var title = $(ele).find('.wine-name a.bold').html();
