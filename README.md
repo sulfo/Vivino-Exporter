@@ -1,6 +1,7 @@
-#How to use
+# Vivino Exporter
+
+## How to use
 * Login to Vivino.
 * Go to "My Wines"
-* Open javascript console, and copy paste contents of winescrape.js
-* ???
+* Open the javascript console, and copy paste the javascript in winescrape.js
 * Profit!
